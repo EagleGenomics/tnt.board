@@ -61,20 +61,21 @@ var board = function() {
     	d3.select(div)
     	    .classed("tnt", true);
 
-    	// TODO: Move the styling to the scss?
-    	var browserDiv = d3.select(div)
-    	    .append("div")
-    	    .attr("id", "tnt_" + div_id)
-    	    .style("position", "relative")
-    	    .classed("tnt_framed", exports.show_frame ? true : false)
-    	    .style("width", (width + cap_width*2 + exports.extend_canvas.right + exports.extend_canvas.left) + "px");
+    	// Removed styling here; TODO: Move the styling to the scss?
+    	// var browserDiv = d3.select(div)
+    	//     .append("div")
+    	//     .attr("id", "tnt_" + div_id)
+    	//     .style("position", "relative")
+    	//     .classed("tnt_framed", exports.show_frame ? true : false)
+    	//     .style("width", (width + cap_width*2 + exports.extend_canvas.right + exports.extend_canvas.left) + "px");
 
-    	var groupDiv = browserDiv
-    	    .append("div")
-    	    .attr("class", "tnt_groupDiv");
+    	// var groupDiv = browserDiv
+    	//     .append("div")
+    	//     .attr("class", "tnt_groupDiv");
 
     	// The SVG
-    	svg = groupDiv
+    	// svg = groupDiv
+	svg = d3.select(div)
     	    .append("svg")
     	    .attr("class", "tnt_svg")
     	    .attr("width", width)
