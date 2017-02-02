@@ -17,6 +17,8 @@ var tnt_feature = function () {
         index    : undefined,
         layout   : layout.identity(),
         color : '#000',
+	border_color : undefined,
+	text_color : undefined,
         scale : undefined
     };
 
